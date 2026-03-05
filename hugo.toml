@@ -1,0 +1,15 @@
+baseURL = "https://opennodecloud.com/"
+languageCode = "en-us"
+title = "OpenNode"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "OpenNode develops Waldur — an open-source platform for managing private clouds, public clouds, and HPC centers."
+  email = "info@opennodecloud.com"
+  waldurURL = "https://waldur.com"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

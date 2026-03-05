@@ -1,0 +1,29 @@
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo" aria-label="OpenNode home">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2.5"/>
+        <circle cx="16" cy="16" r="5" fill="currentColor"/>
+      </svg>
+      <span>OpenNode</span>
+    </a>
+    <nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  const nav = document.querySelector('.nav-links');
+  const expanded = this.getAttribute('aria-expanded') === 'true';
+  this.setAttribute('aria-expanded', !expanded);
+  nav.classList.toggle('open');
+});
+</script>

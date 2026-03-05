@@ -1,0 +1,36 @@
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>OpenNode</h4>
+        <p>Building open-source cloud management software.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://waldur.com" target="_blank" rel="noopener">Waldur</a></li>
+          <li><a href="https://docs.waldur.com" target="_blank" rel="noopener">Documentation</a></li>
+          <li><a href="https://github.com/waldur" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <p>
+          OpenNode OÜ<br>
+          Estonia, reg. 12061352
+        </p>
+        <p>
+          OpenNode Ltd<br>
+          UK, no. 15280880
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} OpenNode. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
